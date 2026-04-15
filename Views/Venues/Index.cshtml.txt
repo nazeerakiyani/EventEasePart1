@@ -1,0 +1,14 @@
+﻿@model IEnumerable<EventEasePart1.Models.Venue>
+
+<h2>Durban Venues</h2>
+<table border="1" style="border-collapse:collapse;">
+    <tr><th>Name</th><th>Location</th><th>Capacity</th></tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Name</td>
+            <td>@item.Location</td>
+            <td>@item.Capacity</td>
+        </tr>
+    }
+</table>
